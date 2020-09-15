@@ -5,6 +5,7 @@ days <- c('Mon','Tue','Wed','Thur','Fri','Sat','Sun')
 RPI_Weather_Week <- data.frame(days,temp,snowed)  ## create new dataframe
 RPI_Weather_Week
 head(RPI_Weather_Week)
+str(RPI_Weather_Week)
 summary(RPI_Weather_Week)
 RPI_Weather_Week[1,]  ## first row and all columns 
 RPI_Weather_Week[,1]  ## first column and all rows 
