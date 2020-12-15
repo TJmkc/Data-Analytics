@@ -88,3 +88,9 @@ hist(EDesert, seq(30.,95.,1.0), probability = TRUE)
 plot(ecdf(EDesert), do.points = FALSE, verticals = TRUE)
 qqplot(qt(ppoints(250),df =5), EDesert, xlab = "Q-Q plot for Desert")
 
+
+specie <- c(rep("sorgho" , 3) , rep("poacee" , 3) , rep("banana" , 3) , rep("triticum" , 3) )
+condition <- rep(c("normal" , "stress" , "Nitrogen") , 4)
+value <- abs(rnorm(12 , 0 , 15))
+data <- data.frame(specie,condition,value)
+data
