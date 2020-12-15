@@ -72,5 +72,7 @@ summary(out)
 
 dat.te=data.frame(x=Khan$xtest , y = as.factor(Khan$ytest ))
 pred.te=predict(out, newdata=dat.te)
+
+
 table(pred.te, dat.te$y)
 
